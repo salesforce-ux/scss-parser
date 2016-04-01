@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A library to parse/stringify SCSS",
   "main": "dist/index.js",
-  "license": "BSD-2-Clause",
   "engines": {
     "node": ">=5.0.0"
   },
