@@ -17,12 +17,12 @@ For an easy way to traverse/modify the generated AST, check out [QueryAST](https
 
 ```javascript
 let { parse, stringify } = require('scss-parser')
-let createQuery = require('query-ast')
+let createQueryWrapper = require('query-ast')
 
 // Create an AST
 let ast = parse('.hello { color: red; } .world { color: blue; }')
 // Create a function to traverse/modify the AST
-let $ = createQuery(ast)
+let $ = createQueryWrapper(ast)
 // Make some modifications
 $().find('rule').eq(1).remove()
 // Convert the modified AST back to a string
