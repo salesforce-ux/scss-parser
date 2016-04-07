@@ -76,4 +76,15 @@ describe('stringify', () => {
     let ast = createAST(css)
     expect(stringify(ast)).to.equal(css)
   })
+  it('sink 3', () => {
+    let css = `
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+    `
+    let ast = createAST(css)
+    expect(stringify(ast)).to.equal(css)
+  })
 })
