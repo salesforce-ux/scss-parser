@@ -1018,56 +1018,97 @@ describe('Parser', () => {
       }
       expect(actual).to.deep.equal(expected)
     })
-  })
-  it('2 classes 2 pseudo classes', () => {
-    let actual = createAST('.a:hover, .a:active {}')
-    let expected = {
-      type: 'stylesheet',
-      value: [{
-        type: 'rule',
+    it('2 classes 2 pseudo classes', () => {
+      let actual = createAST('.a:hover, .a:active {}')
+      let expected = {
+        type: 'stylesheet',
         value: [{
-          type: 'selector',
+          type: 'rule',
           value: [{
-            type: 'class',
+            type: 'selector',
             value: [{
-              type: 'identifier',
-              value: 'a'
+              type: 'class',
+              value: [{
+                type: 'identifier',
+                value: 'a'
+              }]
+            }, {
+              type: 'pseudo_class',
+              value: [{
+                type: 'identifier',
+                value: 'hover'
+              }]
+            }, {
+              type: 'punctuation',
+              value: ','
+            }, {
+              type: 'space',
+              value: ' '
+            }, {
+              type: 'class',
+              value: [{
+                type: 'identifier',
+                value: 'a'
+              }]
+            }, {
+              type: 'pseudo_class',
+              value: [{
+                type: 'identifier',
+                value: 'active'
+              }]
+            }, {
+              type: 'space',
+              value: ' '
             }]
           }, {
-            type: 'pseudo_class',
-            value: [{
-              type: 'identifier',
-              value: 'hover'
-            }]
-          }, {
-            type: 'punctuation',
-            value: ','
-          }, {
-            type: 'space',
-            value: ' '
-          }, {
-            type: 'class',
-            value: [{
-              type: 'identifier',
-              value: 'a'
-            }]
-          }, {
-            type: 'pseudo_class',
-            value: [{
-              type: 'identifier',
-              value: 'active'
-            }]
-          }, {
-            type: 'space',
-            value: ' '
+            type: 'block',
+            value: []
           }]
-        }, {
-          type: 'block',
-          value: []
         }]
-      }]
-    }
-    expect(actual).to.deep.equal(expected)
+      }
+      expect(actual).to.deep.equal(expected)
+    })
+    it('2 classes 2 pseudo classes', () => {
+      let actual = createAST('li:hover[data-foo=bar] {}')
+      let expected = {
+        type: 'stylesheet',
+        value: [{
+          type: 'rule',
+          value: [{
+            type: 'selector',
+            value: [{
+              type: 'identifier',
+              value: 'li'
+            }, {
+              type: 'pseudo_class',
+              value: [{
+                type: 'identifier',
+                value: 'hover'
+              }]
+            }, {
+              type: 'attribute',
+              value: [{
+                type: 'identifier',
+                value: 'data-foo'
+              }, {
+                type: 'operator',
+                value: '='
+              }, {
+                type: 'identifier',
+                value: 'bar'
+              }]
+            }, {
+              type: 'space',
+              value: ' '
+            }]
+          }, {
+            type: 'block',
+            value: []
+          }]
+        }]
+      }
+      expect(actual).to.deep.equal(expected)
+    })
   })
   describe('atrule', () => {
     it('include 0 args', () => {
