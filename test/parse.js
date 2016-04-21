@@ -1109,6 +1109,278 @@ describe('Parser', () => {
       }
       expect(actual).to.deep.equal(expected)
     })
+    it('nested pseudo classes', () => {
+      let actual = createAST('li:a(:b) {}')
+      let expected = {
+        type: 'stylesheet',
+        value: [{
+          type: 'rule',
+          value: [{
+            type: 'selector',
+            value: [{
+              type: 'identifier',
+              value: 'li'
+            }, {
+              type: 'function',
+              value: [{
+                type: 'pseudo_class',
+                value: [{
+                  type: 'identifier',
+                  value: 'a'
+                }]
+              }, {
+                type: 'arguments',
+                value: [{
+                  type: 'pseudo_class',
+                  value: [{
+                    type: 'identifier',
+                    value: 'b'
+                  }]
+                }]
+              }]
+            }, {
+              type: 'space',
+              value: ' '
+            }]
+          }, {
+            type: 'block',
+            value: []
+          }]
+        }]
+      }
+      expect(actual).to.deep.equal(expected)
+    })
+    it('1 pseudo class 1 declaration (no space)', () => {
+      let actual = createAST('li:hover { color:red; }')
+      let expected = {
+        type: 'stylesheet',
+        value: [ {
+          type: 'rule',
+          value: [{
+            type: 'selector',
+            value: [{
+              type: 'identifier',
+              value: 'li'
+            }, {
+              type: 'pseudo_class',
+              value: [{
+                type: 'identifier',
+                value: 'hover'
+              }]
+            }, {
+              type: 'space',
+              value: ' '
+            }]
+          }, {
+            type: 'block',
+            value: [{
+              type: 'space',
+              value: ' '
+            }, {
+              type: 'declaration',
+              value: [{
+                type: 'property',
+                value: [{
+                  type: 'identifier',
+                  value: 'color'
+                }]
+              }, {
+                type: 'punctuation',
+                value: ':'
+              }, {
+                type: 'value',
+                value: [{
+                  type: 'identifier',
+                  value: 'red'
+                }]
+              }, {
+                type: 'punctuation',
+                value: ';'
+              }]
+            }, {
+              type: 'space',
+              value: ' '
+            }]
+          }]
+        }]
+      }
+      expect(actual).to.deep.equal(expected)
+    })
+    it('1 pseudo class 1 declaration 1 nested declaration', () => {
+      let actual = createAST('li:hover { color: red { alt: blue; } }')
+      let expected = {
+        type: 'stylesheet',
+        value: [ {
+          type: 'rule',
+          value: [{
+            type: 'selector',
+            value: [{
+              type: 'identifier',
+              value: 'li'
+            }, {
+              type: 'pseudo_class',
+              value: [{
+                type: 'identifier',
+                value: 'hover'
+              }]
+            }, {
+              type: 'space',
+              value: ' '
+            }]
+          }, {
+            type: 'block',
+            value: [{
+              type: 'space',
+              value: ' '
+            }, {
+              type: 'declaration',
+              value: [{
+                type: 'property',
+                value: [{
+                  type: 'identifier',
+                  value: 'color'
+                }]
+              }, {
+                type: 'punctuation',
+                value: ':'
+              }, {
+                type: 'value',
+                value: [{
+                  type: 'space',
+                  value: ' '
+                }, {
+                  type: 'identifier',
+                  value: 'red'
+                }, {
+                  type: 'space',
+                  value: ' '
+                }, {
+                  type: 'block',
+                  value: [{
+                    type: 'space',
+                    value: ' '
+                  }, {
+                    type: 'declaration',
+                    value: [{
+                      type: 'property',
+                      value: [{
+                        type: 'identifier',
+                        value: 'alt'
+                      }]
+                    }, {
+                      type: 'punctuation',
+                      value: ':'
+                    }, {
+                      type: 'value',
+                      value: [{
+                        type: 'space',
+                        value: ' '
+                      }, {
+                        type: 'identifier',
+                        value: 'blue'
+                      }]
+                    }, {
+                      type: 'punctuation',
+                      value: ';'
+                    }]
+                  }, {
+                    type: 'space',
+                    value: ' '
+                  }]
+                }]
+              }]
+            }, {
+              type: 'space',
+              value: ' '
+            }]
+          }]
+        }]
+      }
+      expect(actual).to.deep.equal(expected)
+    })
+    it('1 pseudo class 1 declaration (no space) 1 nested declaration', () => {
+      let actual = createAST('li:hover { color:red { alt:blue; } }')
+      let expected = {
+        type: 'stylesheet',
+        value: [ {
+          type: 'rule',
+          value: [{
+            type: 'selector',
+            value: [{
+              type: 'identifier',
+              value: 'li'
+            }, {
+              type: 'pseudo_class',
+              value: [{
+                type: 'identifier',
+                value: 'hover'
+              }]
+            }, {
+              type: 'space',
+              value: ' '
+            }]
+          }, {
+            type: 'block',
+            value: [{
+              type: 'space',
+              value: ' '
+            }, {
+              type: 'rule',
+              value: [{
+                type: 'selector',
+                value: [{
+                  type: 'identifier',
+                  value: 'color'
+                }, {
+                  type: 'pseudo_class',
+                  value: [{
+                    type: 'identifier',
+                    value: 'red'
+                  }]
+                }, {
+                  type: 'space',
+                  value: ' '
+                }]
+              }, {
+                type: 'block',
+                value: [{
+                  type: 'space',
+                  value: ' '
+                }, {
+                  type: 'declaration',
+                  value: [{
+                    type: 'property',
+                    value: [{
+                      type: 'identifier',
+                      value: 'alt'
+                    }]
+                  }, {
+                    type: 'punctuation',
+                    value: ':'
+                  }, {
+                    type: 'value',
+                    value: [{
+                      type: 'identifier',
+                      value: 'blue'
+                    }]
+                  }, {
+                    type: 'punctuation',
+                    value: ';'
+                  }]
+                }, {
+                  type: 'space',
+                  value: ' '
+                }]
+              }]
+            }, {
+              type: 'space',
+              value: ' '
+            }]
+          }]
+        }]
+      }
+      expect(actual).to.deep.equal(expected)
+    })
   })
   describe('atrule', () => {
     it('include 0 args', () => {

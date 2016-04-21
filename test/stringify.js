@@ -87,4 +87,13 @@ describe('stringify', () => {
     let ast = createAST(css)
     expect(stringify(ast)).to.equal(css)
   })
+  it('sink 4', () => {
+    let css = `
+      li:hover:active {
+        color:red;
+      }
+    `
+    let ast = createAST(css)
+    expect(stringify(ast)).to.equal(css)
+  })
 })
