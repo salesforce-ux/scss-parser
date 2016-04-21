@@ -1150,6 +1150,50 @@ describe('Parser', () => {
       }
       expect(actual).to.deep.equal(expected)
     })
+    it('nested pseudo classes (with identifier)', () => {
+      let actual = createAST('li:a(item:b) {}')
+      let expected = {
+        type: 'stylesheet',
+        value: [{
+          type: 'rule',
+          value: [{
+            type: 'selector',
+            value: [{
+              type: 'identifier',
+              value: 'li'
+            }, {
+              type: 'function',
+              value: [{
+                type: 'pseudo_class',
+                value: [{
+                  type: 'identifier',
+                  value: 'a'
+                }]
+              }, {
+                type: 'arguments',
+                value: [{
+                  type: 'identifier',
+                  value: 'item'
+                }, {
+                  type: 'pseudo_class',
+                  value: [{
+                    type: 'identifier',
+                    value: 'b'
+                  }]
+                }]
+              }]
+            }, {
+              type: 'space',
+              value: ' '
+            }]
+          }, {
+            type: 'block',
+            value: []
+          }]
+        }]
+      }
+      expect(actual).to.deep.equal(expected)
+    })
     it('1 pseudo class 1 declaration (no space)', () => {
       let actual = createAST('li:hover { color:red; }')
       let expected = {
