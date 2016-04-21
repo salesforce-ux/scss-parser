@@ -1,6 +1,7 @@
 # SCSS Parser
 
-[![Build Status](https://travis-ci.org/salesforce-ux/scss-parser.svg?branch=master)](https://travis-ci.org/salesforce-ux/scss-parser)
+[![Build Status][travis-image]][travis-url]
+[![NPM version][npm-image]][npm-url]
 
 ## Getting Started
 
@@ -53,3 +54,9 @@ Redistributions in binary form must reproduce the above copyright notice, this l
 Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+[npm-url]: https://npmjs.org/package/scss-parser
+[npm-image]: http://img.shields.io/npm/v/scss-parser.svg
+
+[travis-url]: https://travis-ci.org/salesforce-ux/scss-parser
+[travis-image]: https://travis-ci.org/salesforce-ux/scss-parser.svg?branch=master
