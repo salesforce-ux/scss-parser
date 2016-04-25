@@ -29,7 +29,7 @@ let ast = parse('.hello { color: red; } .world { color: blue; }')
 // Create a function to traverse/modify the AST
 let $ = createQueryWrapper(ast)
 // Make some modifications
-$().find('rule').eq(1).remove()
+$('rule').eq(1).remove()
 // Convert the modified AST back to a string
 let scss = stringify($().get(0))
 ```
