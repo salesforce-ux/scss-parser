@@ -6,6 +6,10 @@
   "engines": {
     "node": ">=5.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:salesforce-ux/scss-parser.git"
+  },
   "scripts": {
     "test": "npm run lint && mocha lib/**/*.js test/**/*.js --reporter min --recursive --harmony_destructuring --harmony_rest_parameters",
     "lint": "standard",
