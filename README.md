@@ -11,7 +11,7 @@ let { parse, stringify } = require('scss-parser')
 // Create an AST from a string of SCSS
 let ast = parse('.hello { color: $red; }')
 // Modify the AST (see below for a better way to do this)
-ast.value[0].value[0].value[0].value = 'world'
+ast.value[0].value[0].value[0].value[0].value = 'world'
 // Convert the modified AST back to SCSS
 let scss = stringify(ast) // .world { color: $red; }
 ```
