@@ -11,8 +11,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 /* global describe, it */
 
-'use strict'
-
 const { expect } = require('chai')
 const { createAST, parse } = require('./helpers')
 

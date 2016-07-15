@@ -10,8 +10,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 */
 
 /* global describe, it */
-
-'use strict'
+/* eslint-disable no-useless-escape */
 
 const { expect } = require('chai')
 
