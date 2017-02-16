@@ -1,5 +1,7 @@
 # SCSS Parser
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/salesforce-ux/scss-parser.svg)](https://greenkeeper.io/)
+
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
 
