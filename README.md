@@ -2,6 +2,7 @@
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
+[![Greenkeeper badge][greenkeeper-image][greenkeeper-url]
 
 ## Getting Started
 
@@ -60,3 +61,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 [travis-url]: https://travis-ci.org/salesforce-ux/scss-parser
 [travis-image]: https://travis-ci.org/salesforce-ux/scss-parser.svg?branch=master
+
+[greenkeeper-url]: https://greenkeeper.io/
+[greenkeeper-image]: https://badges.greenkeeper.io/salesforce-ux/scss-parser.svg
