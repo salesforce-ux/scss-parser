@@ -1848,6 +1848,26 @@ describe('Parser', () => {
     })
   })
   describe('sink', () => {
-
+    it('works', () => {
+      let scss = `
+      $base-font-family: 'ProximaNova' !default;
+      @mixin font-face($font-family, $file-name, $baseurl, $weight: 500, $style: normal ){
+        @font-face {
+          font: {
+            family: $font-family;
+            weight: $weight;
+            style: $style;
+          }
+          src: url( $baseurl + $file-name + '.eot');
+          src: url( $baseurl + $file-name + '.eot?#iefix') format('embedded-opentype');
+          src: url( $baseurl + $file-name + '.woff') format('woff'),
+                 url( $baseurl + $file-name + '.woff2') format('woff2'),
+                 url( $baseurl + $file-name + '.ttf') format('truetype'),
+                 url( $baseurl + $file-name + '.svg' + '#' + $file-name) format('svg');
+        }
+      }
+      `
+      createAST(scss)
+    })
   })
 })

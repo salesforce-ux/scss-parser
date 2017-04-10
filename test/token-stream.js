@@ -39,7 +39,7 @@ describe('TokenStream', () => {
     it('tokenizes all characters in the InputStream', () => {
       let t = createTokenStream(createInputStream('hello'))
       expect(t.all()).to.have.length(1)
-      expect(t.eof()).to.be.true
+      expect(t.eof()).to.equal(true)
     })
   })
   describe('#peek', () => {
@@ -306,15 +306,15 @@ describe('TokenStream', () => {
   describe('#eof', () => {
     it('returns false if there are more tokens', () => {
       let t = createTokenStream(createInputStream('hello'))
-      expect(t.eof()).to.be.false
+      expect(t.eof()).to.equal(false)
     })
     it('returns true if there are no more tokens', () => {
       let t = createTokenStream(createInputStream('hello world'))
-      expect(t.eof()).to.be.false
+      expect(t.eof()).to.equal(false)
       cleanNode(t.next())
       cleanNode(t.next())
       cleanNode(t.next())
-      expect(t.eof()).to.be.true
+      expect(t.eof()).to.equal(true)
     })
   })
   describe('#err', () => {

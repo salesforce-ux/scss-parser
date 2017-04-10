@@ -27,7 +27,7 @@ describe('InputStream', () => {
   describe('#position', () => {
     it('defaults the position to 0', () => {
       let p = createInputStream().position()
-      expect(p).to.be.frozen
+      expect(Object.isFrozen(p)).to.equal(true)
       expect(p).to.have.property('cursor').and.to.equal(0)
       expect(p).to.have.property('line').and.to.equal(1)
       expect(p).to.have.property('column').and.to.equal(0)
@@ -68,14 +68,14 @@ describe('InputStream', () => {
   describe('#eof', () => {
     it('returns false if there are more characters', () => {
       let i = createInputStream('hello')
-      expect(i.eof()).to.be.false
+      expect(i.eof()).to.equal(false)
     })
     it('returns true if there are no more characters', () => {
       let i = createInputStream('hi')
-      expect(i.eof()).to.be.false
+      expect(i.eof()).to.equal(false)
       i.next()
       i.next()
-      expect(i.eof()).to.be.true
+      expect(i.eof()).to.equal(true)
     })
   })
   describe('#err', () => {
