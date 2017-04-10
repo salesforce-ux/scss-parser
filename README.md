@@ -2,7 +2,7 @@
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
-[![Greenkeeper badge][greenkeeper-image][greenkeeper-url]
+[![Greenkeeper][greenkeeper-image]][greenkeeper-url]
 
 ## Getting Started
 
