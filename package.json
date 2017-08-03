@@ -16,8 +16,7 @@
   },
   "scripts": {
     "test": "jest",
-    "lint": "standard",
-    "prepublish": "npm run build"
+    "lint": "standard"
   },
   "dependencies": {
     "invariant": "2.2.2",
