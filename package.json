@@ -6,10 +6,10 @@
   "license": "SEE LICENSE IN README",
   "repository": {
     "type": "git",
-    "url": "https://github.com/salesforce-ux/scss-parser.git"
+    "url": "https://github.com/qodesmith/scss-parser.git"
   },
   "bugs": {
-    "url": "https://github.com/salesforce-ux/scss-parser/issues"
+    "url": "https://github.com/qodesmith/scss-parser/issues"
   },
   "engines": {
     "node": ">=6.0.0"
