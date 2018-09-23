@@ -3,6 +3,8 @@
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
 
+*NOTE: This repo is a fork. It updates the lodash dependency to avoid npm audit scariness. A [PR](https://github.com/salesforce-ux/scss-parser/pull/21) is out in the original repo but it looks like it's no longer maintained.*
+
 ## Getting Started
 
 ```javascript
