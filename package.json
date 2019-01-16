@@ -1,6 +1,6 @@
 {
   "name": "scss-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library to parse/stringify SCSS",
   "main": "lib/index.js",
   "license": "SEE LICENSE IN README",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "invariant": "2.2.2",
-    "lodash": "4.17.4"
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "jest": "20.0.4",
