@@ -480,6 +480,24 @@ Array [
 ]
 `;
 
+exports[`#next tokens space carriage return character 1`] = `
+Object {
+  "next": Object {
+    "column": 2,
+    "cursor": 4,
+    "line": 2,
+  },
+  "start": Object {
+    "column": 0,
+    "cursor": 0,
+    "line": 1,
+  },
+  "type": "space",
+  "value": "
+  ",
+}
+`;
+
 exports[`#next tokens space multiple spaces 1`] = `
 Object {
   "next": Object {
