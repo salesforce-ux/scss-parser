@@ -19,12 +19,12 @@
     "lint": "standard"
   },
   "dependencies": {
-    "invariant": "2.2.2",
+    "invariant": "2.2.4",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "jest": "20.0.4",
-    "standard": "10.0.1"
+    "jest": "24.9.0",
+    "standard": "14.3.1"
   },
   "standard": {
     "ignore": [
