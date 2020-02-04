@@ -1,6 +1,7 @@
 # SCSS Parser
 
 [![Build Status][travis-image]][travis-url]
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=salesforce-ux/scss-parser)](https://dependabot.com)
 [![NPM version][npm-image]][npm-url]
 
 ## Getting Started
