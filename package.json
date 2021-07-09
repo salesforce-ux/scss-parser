@@ -1,6 +1,6 @@
 {
   "name": "scss-parser",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A library to parse/stringify SCSS",
   "main": "lib/index.js",
   "license": "SEE LICENSE IN README",
