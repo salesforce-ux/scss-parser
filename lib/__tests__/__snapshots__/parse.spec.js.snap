@@ -1114,6 +1114,576 @@ Object {
 }
 `;
 
+exports[`atrule mixin 1 arbitrary keyword arg 1 declaration 1`] = `
+Object {
+  "next": undefined,
+  "start": undefined,
+  "type": "stylesheet",
+  "value": Array [
+    Object {
+      "next": Object {
+        "column": 37,
+        "cursor": 37,
+        "line": 1,
+      },
+      "start": Object {
+        "column": 0,
+        "cursor": 0,
+        "line": 1,
+      },
+      "type": "atrule",
+      "value": Array [
+        Object {
+          "next": Object {
+            "column": 6,
+            "cursor": 6,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 0,
+            "cursor": 0,
+            "line": 1,
+          },
+          "type": "atkeyword",
+          "value": "mixin",
+        },
+        Object {
+          "next": Object {
+            "column": 7,
+            "cursor": 7,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 6,
+            "cursor": 6,
+            "line": 1,
+          },
+          "type": "space",
+          "value": " ",
+        },
+        Object {
+          "next": Object {
+            "column": 14,
+            "cursor": 14,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 7,
+            "cursor": 7,
+            "line": 1,
+          },
+          "type": "identifier",
+          "value": "myMixin",
+        },
+        Object {
+          "next": Object {
+            "column": 21,
+            "cursor": 21,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 14,
+            "cursor": 14,
+            "line": 1,
+          },
+          "type": "arguments",
+          "value": Array [
+            Object {
+              "next": Object {
+                "column": 20,
+                "cursor": 20,
+                "line": 1,
+              },
+              "start": Object {
+                "column": 15,
+                "cursor": 15,
+                "line": 1,
+              },
+              "type": "arbitrary_keyword_argument",
+              "value": "a",
+            },
+          ],
+        },
+        Object {
+          "next": Object {
+            "column": 22,
+            "cursor": 22,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 21,
+            "cursor": 21,
+            "line": 1,
+          },
+          "type": "space",
+          "value": " ",
+        },
+        Object {
+          "next": Object {
+            "column": 37,
+            "cursor": 37,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 22,
+            "cursor": 22,
+            "line": 1,
+          },
+          "type": "block",
+          "value": Array [
+            Object {
+              "next": Object {
+                "column": 24,
+                "cursor": 24,
+                "line": 1,
+              },
+              "start": Object {
+                "column": 23,
+                "cursor": 23,
+                "line": 1,
+              },
+              "type": "space",
+              "value": " ",
+            },
+            Object {
+              "next": undefined,
+              "start": Object {
+                "column": 24,
+                "cursor": 24,
+                "line": 1,
+              },
+              "type": "declaration",
+              "value": Array [
+                Object {
+                  "next": Object {
+                    "column": 29,
+                    "cursor": 29,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 24,
+                    "cursor": 24,
+                    "line": 1,
+                  },
+                  "type": "property",
+                  "value": Array [
+                    Object {
+                      "next": Object {
+                        "column": 29,
+                        "cursor": 29,
+                        "line": 1,
+                      },
+                      "start": Object {
+                        "column": 24,
+                        "cursor": 24,
+                        "line": 1,
+                      },
+                      "type": "identifier",
+                      "value": "color",
+                    },
+                  ],
+                },
+                Object {
+                  "next": Object {
+                    "column": 30,
+                    "cursor": 30,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 29,
+                    "cursor": 29,
+                    "line": 1,
+                  },
+                  "type": "punctuation",
+                  "value": ":",
+                },
+                Object {
+                  "next": Object {
+                    "column": 34,
+                    "cursor": 34,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 30,
+                    "cursor": 30,
+                    "line": 1,
+                  },
+                  "type": "value",
+                  "value": Array [
+                    Object {
+                      "next": Object {
+                        "column": 31,
+                        "cursor": 31,
+                        "line": 1,
+                      },
+                      "start": Object {
+                        "column": 30,
+                        "cursor": 30,
+                        "line": 1,
+                      },
+                      "type": "space",
+                      "value": " ",
+                    },
+                    Object {
+                      "next": Object {
+                        "column": 34,
+                        "cursor": 34,
+                        "line": 1,
+                      },
+                      "start": Object {
+                        "column": 31,
+                        "cursor": 31,
+                        "line": 1,
+                      },
+                      "type": "identifier",
+                      "value": "red",
+                    },
+                  ],
+                },
+                Object {
+                  "next": Object {
+                    "column": 35,
+                    "cursor": 35,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 34,
+                    "cursor": 34,
+                    "line": 1,
+                  },
+                  "type": "punctuation",
+                  "value": ";",
+                },
+              ],
+            },
+            Object {
+              "next": Object {
+                "column": 36,
+                "cursor": 36,
+                "line": 1,
+              },
+              "start": Object {
+                "column": 35,
+                "cursor": 35,
+                "line": 1,
+              },
+              "type": "space",
+              "value": " ",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`atrule mixin 1 required arg 1 arbitrary keyword arg 1 declaration 1`] = `
+Object {
+  "next": undefined,
+  "start": undefined,
+  "type": "stylesheet",
+  "value": Array [
+    Object {
+      "next": Object {
+        "column": 41,
+        "cursor": 41,
+        "line": 1,
+      },
+      "start": Object {
+        "column": 0,
+        "cursor": 0,
+        "line": 1,
+      },
+      "type": "atrule",
+      "value": Array [
+        Object {
+          "next": Object {
+            "column": 6,
+            "cursor": 6,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 0,
+            "cursor": 0,
+            "line": 1,
+          },
+          "type": "atkeyword",
+          "value": "mixin",
+        },
+        Object {
+          "next": Object {
+            "column": 7,
+            "cursor": 7,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 6,
+            "cursor": 6,
+            "line": 1,
+          },
+          "type": "space",
+          "value": " ",
+        },
+        Object {
+          "next": Object {
+            "column": 14,
+            "cursor": 14,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 7,
+            "cursor": 7,
+            "line": 1,
+          },
+          "type": "identifier",
+          "value": "myMixin",
+        },
+        Object {
+          "next": Object {
+            "column": 25,
+            "cursor": 25,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 14,
+            "cursor": 14,
+            "line": 1,
+          },
+          "type": "arguments",
+          "value": Array [
+            Object {
+              "next": Object {
+                "column": 17,
+                "cursor": 17,
+                "line": 1,
+              },
+              "start": Object {
+                "column": 15,
+                "cursor": 15,
+                "line": 1,
+              },
+              "type": "variable",
+              "value": "a",
+            },
+            Object {
+              "next": Object {
+                "column": 18,
+                "cursor": 18,
+                "line": 1,
+              },
+              "start": Object {
+                "column": 17,
+                "cursor": 17,
+                "line": 1,
+              },
+              "type": "punctuation",
+              "value": ",",
+            },
+            Object {
+              "next": Object {
+                "column": 19,
+                "cursor": 19,
+                "line": 1,
+              },
+              "start": Object {
+                "column": 18,
+                "cursor": 18,
+                "line": 1,
+              },
+              "type": "space",
+              "value": " ",
+            },
+            Object {
+              "next": Object {
+                "column": 24,
+                "cursor": 24,
+                "line": 1,
+              },
+              "start": Object {
+                "column": 19,
+                "cursor": 19,
+                "line": 1,
+              },
+              "type": "arbitrary_keyword_argument",
+              "value": "b",
+            },
+          ],
+        },
+        Object {
+          "next": Object {
+            "column": 26,
+            "cursor": 26,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 25,
+            "cursor": 25,
+            "line": 1,
+          },
+          "type": "space",
+          "value": " ",
+        },
+        Object {
+          "next": Object {
+            "column": 41,
+            "cursor": 41,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 26,
+            "cursor": 26,
+            "line": 1,
+          },
+          "type": "block",
+          "value": Array [
+            Object {
+              "next": Object {
+                "column": 28,
+                "cursor": 28,
+                "line": 1,
+              },
+              "start": Object {
+                "column": 27,
+                "cursor": 27,
+                "line": 1,
+              },
+              "type": "space",
+              "value": " ",
+            },
+            Object {
+              "next": undefined,
+              "start": Object {
+                "column": 28,
+                "cursor": 28,
+                "line": 1,
+              },
+              "type": "declaration",
+              "value": Array [
+                Object {
+                  "next": Object {
+                    "column": 33,
+                    "cursor": 33,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 28,
+                    "cursor": 28,
+                    "line": 1,
+                  },
+                  "type": "property",
+                  "value": Array [
+                    Object {
+                      "next": Object {
+                        "column": 33,
+                        "cursor": 33,
+                        "line": 1,
+                      },
+                      "start": Object {
+                        "column": 28,
+                        "cursor": 28,
+                        "line": 1,
+                      },
+                      "type": "identifier",
+                      "value": "color",
+                    },
+                  ],
+                },
+                Object {
+                  "next": Object {
+                    "column": 34,
+                    "cursor": 34,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 33,
+                    "cursor": 33,
+                    "line": 1,
+                  },
+                  "type": "punctuation",
+                  "value": ":",
+                },
+                Object {
+                  "next": Object {
+                    "column": 38,
+                    "cursor": 38,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 34,
+                    "cursor": 34,
+                    "line": 1,
+                  },
+                  "type": "value",
+                  "value": Array [
+                    Object {
+                      "next": Object {
+                        "column": 35,
+                        "cursor": 35,
+                        "line": 1,
+                      },
+                      "start": Object {
+                        "column": 34,
+                        "cursor": 34,
+                        "line": 1,
+                      },
+                      "type": "space",
+                      "value": " ",
+                    },
+                    Object {
+                      "next": Object {
+                        "column": 38,
+                        "cursor": 38,
+                        "line": 1,
+                      },
+                      "start": Object {
+                        "column": 35,
+                        "cursor": 35,
+                        "line": 1,
+                      },
+                      "type": "identifier",
+                      "value": "red",
+                    },
+                  ],
+                },
+                Object {
+                  "next": Object {
+                    "column": 39,
+                    "cursor": 39,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 38,
+                    "cursor": 38,
+                    "line": 1,
+                  },
+                  "type": "punctuation",
+                  "value": ";",
+                },
+              ],
+            },
+            Object {
+              "next": Object {
+                "column": 40,
+                "cursor": 40,
+                "line": 1,
+              },
+              "start": Object {
+                "column": 39,
+                "cursor": 39,
+                "line": 1,
+              },
+              "type": "space",
+              "value": " ",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}
+`;
+
 exports[`atrule mixin 1 required arg 1 declaration 1`] = `
 Object {
   "next": undefined,
